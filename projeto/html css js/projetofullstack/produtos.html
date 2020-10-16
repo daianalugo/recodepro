@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="script.js"></script>
+
+    <title>Full Stack</title>
+</head>
+<body>
+                  <!-- ***** MENU ***** -->
+
+    <nav>
+        <label class="logo" >Full Stack Eletro</label>
+        <ul class="nav-links">           
+            <li><a target="blank" href= "index.html">Home</a></li>
+            <li><a target="blank" href= "produtos.html">Produtos</a></li>
+            <li><a target="blank" href= "loja.html">Loja</a></li>     
+        </ul>
+    </nav>
+
+   
+
+               <!-- ***** LISTA DE PRODUTOS ***** -->
+
+    <section class="sectioncateg">
+        <h3>Categorias</h3>
+        <ul>
+            <li onclick="exibirtodos('todos')">Todos</li>
+            <li onclick="exibirCategoria('fogao')">Fogoes</li>
+            <li onclick="exibirCategoria ('microondas')">Microondas</li>
+        </ul>
+    </section>
+
+    <section class="sectionprodutos">
+
+        <div class="divprodutos boxprodutos" id="fogao" style="display: block;">
+            <img class="imgproduto" id="imgproduto1"  src="./img/1.jpeg" alt="" onclick="destaque(this) />
+            </br>
+            <p class="nomeproduto">Fogão</p>
+            <hr>
+            <p class="valorproduto">R$ 500,00</p>
+            <p class="valoratual">R$ 200,00</p>
+        </div>
+
+        <div class="divprodutos boxprodutos" id="fogao" style="display: block;">
+            <img class="imgproduto" src="./img/2.jpeg" alt="">
+            </br>
+            <p class="nomeproduto">Fogão</p>
+            <hr>
+            <p class="valorproduto">R$ 400,00</p>
+            <p class="valoratual">R$ 100,00</p>
+        </div>
+
+        <div class="divprodutos boxprodutos" id="microondas" style="display: block;">
+            <img class="imgproduto" src="./img/3.jpeg" alt="">
+            </br>
+            <p class="nomeproduto">Microondas</p>
+            <hr>
+            <p class="valorproduto">R$ 300,00</p>
+            <p class="valoratual">R$ 100,00</p>
+        </div>
+
+    </section>
+
+    <!-- ***** FORMA DE PAGAMENTO ***** -->
+
+    <div class="pgto">
+        <img onmouseover="aumentar(this)" onmouseout="normal(this)"  src="./img/formasdepgto.jpeg" alt=""  width="200px" height="50%">
+    </div>
+
+     <!-- <img onmouseover="bigImg(this)" 
+    onmouseout="normalImg(this)" border="0"
+     src="smiley.gif" alt="Smiley" width="32" height="32"> -->
+
+
+            <!-- ***** FORMULARIO ***** -->
+   <section class="newsletter">
+       <h3>Nesletter</h3>
+       <p>Dev´s receba nossas promoçoes por-mail</p>
+       <form method="POST">
+           <input type="text" placeholder="Seu Nome ">
+           <input type="email" placeholder="Seu Email">
+           <button>Cadastrar</button>
+       </form>
+   </section>
+
+
+    <footer class="rodape" >
+        <p>  
+            © Copyright 2020 Full Stack Eletro | Recode       
+        </p>
+        
+    </footer>
+    
+              <!-- ***** FOOTER ***** -->
+    
+
+</body>
+</html>
