@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24-Out-2020 às 00:49
+-- Tempo de geração: 24-Out-2020 às 01:28
 -- Versão do servidor: 10.4.14-MariaDB
 -- versão do PHP: 7.4.11
 
@@ -45,7 +45,8 @@ CREATE TABLE `pedidos` (
 
 INSERT INTO `pedidos` (`id`, `nomecliente`, `endereço`, `telefone`, `nomeproduto`, `valorunitario`, `quantidade`, `valortotal`, `datapedido`) VALUES
 (1, 'claudia maria', 'rua de ontem,53', '(11) 1111-1111', 'fogao brastemp', 'R$ 999,99', '1', 'R$ 500,00', '2020-09-01'),
-(2, 'eduarda molinda', 'rua de hoje, 15', '(22) 2222-2222', 'fogao brastemp', 'R$ 599,99', '1', 'R$ 200,00', '2020-10-23');
+(2, 'eduarda molinda', 'rua de hoje, 15', '(22) 2222-2222', 'fogao brastemp', 'R$ 599,99', '1', 'R$ 200,00', '2020-10-23'),
+(3, 'ualace doido', 'rua sanatorio, 666', '(66)6666-6665', 'fogao ', 'R$ 299,25', '1', 'R$ 100,00', '2020-10-19');
 
 --
 -- Índices para tabelas despejadas
@@ -65,7 +66,7 @@ ALTER TABLE `pedidos`
 -- AUTO_INCREMENT de tabela `pedidos`
 --
 ALTER TABLE `pedidos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
