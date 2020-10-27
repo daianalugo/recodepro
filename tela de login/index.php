@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/login.css">
     <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 500; 700 & display = swap" rel = "stylesheet">
 
-    <title>Entre ou casdastre-se</title>   
+    <title>Entre ou cadastre-se</title>   
 
 </head>
 <body>
@@ -21,7 +21,7 @@
                     <input type="password" placeholder="senha">
                     <button>Entrar</button>
                 </form>
-                <a href="./cadstro.html">Ainda não possui cadstro, clique aqui </a>
+                <a href="./cadastro.php">Ainda não possui cadstro, clique aqui </a>
              </div>
         </section>
         
