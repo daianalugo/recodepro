@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/global.css">
     <link href = "https://fonts.googleapis.com/css2? family = Roboto: wght @ 500; 700 & display = swap" rel = "stylesheet">
 
-    <title>Entre ou casdastre-se</title>  
+    <title>Entre ou cadastre-se</title>  
 </head>
 <body>
     <main>
