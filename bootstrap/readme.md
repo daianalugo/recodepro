@@ -1,6 +1,20 @@
-##### Estudos sobre Bootstrap
+##### Projeto Prático Bootstrap
 
--[x] CONHECENDO AS CLASSES
--[x] CORES EM TEXTOS E LINKS
--[x] JUMBOTRON
--[x] ALERTAS
+
+##### Requisitos da aplicação: 
+
+
+-[x] Criação da estrutura inicial do projeto em container.
+-[x] Criação de menu usando as classes .nav 
+-[x] Uso das classes de cores nos objetos principais.
+-[x] Utilização de classes em tabelas ou formulários.
+
+
+
+
+ 
+
+
+
+ 
+

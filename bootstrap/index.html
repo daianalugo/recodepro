@@ -45,65 +45,106 @@
         </div>
       </nav>
 
+        <!-- @@@@@@@@@   ALERT´S  @@@@@@@@@ -->
+
+      <main class="container">
+        <section class="row p-5">
+    
+          <div class="col-6">
+    
+            <div class="jumbotron card card-image text-white" style="background-image: linear-gradient(rgba(122, 90, 196, 0.8),
+            rgba(232, 95, 124, 0.6)), url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940); background-size: cover;">
+              <h1 class="display-6 text-white  font-weight-bold ">ADA LOVELACE</h1>
+              <p class="lead font-weight-bold">
+                 Dia 15 de outubro de 2013,
+                comemoramos o dia da Ada Lovelace,                
+                 </p>
+              <hr class="my-4 bg-white">              
+              <a class="btn btn-danger btn-lg" href="https://revistagalileu.globo.com/Sociedade/Curiosidade/noticia/2018/02/10-fatos-sobre-ada-lovelace-que-farao-voce-admira-la-ainda-mais.html" role="button">Vem conhecer mais sobre Ada</a>
+            </div>
+          </div>
+    
+    
+          <div class="col-3 ">
+            <div class="alert alert-success alert-dismissible">
+              <button class="close text-primary" data-dismiss="alert">&times;</button>
+              Escreveu um livro aos doze anos de idade.
+            </div>
+            
+            <div class="alert alert-warning alert-dismissible">
+              <button class="close text-primary" data-dismiss="alert">&times;</button>
+              Inspirou a criar uma linguagem de programação
+            </div>
+
+            <div class="alert alert-danger alert-dismissible">
+              <button class="close text-primary" data-dismiss="alert">&times;</button>
+               Primeira programadora da história 
+            </div>
+    
+          </div>
+    
+        </section>
+    </main>
 
 
-      <div class="container">
-        <h2>ADA LOVELACE DAY 2013</h2>
-        <p>Olá pessoal,
-            hoje, dia 15 de outubro de 2013,
-            comemoramos o dia da Ada Lovelace,
-            a primeira programadora da história. Não sabe quem é ela?
-            Bom, pra comemorar separei alguns vídeos pra vocês aprenderem
-            um pouquinho e se divertirem:
-        </p>
-      </div>
+
+
+
+
+
+      
+
+        <!-- @@@@@@@@@   TABELA  @@@@@@@@@ -->
+
+        <div class="jumbotron card card-image " style="background-image: url(https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);">
+        <div class="text-white text-botton py-7 px-5">
+            <h2 class="display-4">A primeira programadora da história</h2>            
+        </div>
+    </div>
+      
+
+
+
+
+
 
     <!-- @@@@ FORM @@@@ -->
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+    
+      <form class="bg-primary" >
+        <div class="form-row  ">
+          <div class="form-group col-md-3">
+            <label for="inputEmail4">Nome</label>
+            <input type="email" class="form-control" >
           </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
+          <div class="form-group col-md-4">
+            <label for="text">Email</label>
             <input type="password" class="form-control" id="inputPassword4">
           </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        <div class="form-group col-md-4 ">
+          <label >Seu recado</label>
+          <input type="text" class="form-control"  placeholder="digite aqui">
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
+        
+       
           <div class="form-group col-md-4">
-            <label for="inputState">State</label>
+            <label for="inputState">Genero</label>
             <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
+              <option selected>Feminino</option>
+              <option>Masculino</option>
+              <option>Não opinar</option>
             </select>
           </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
+         
         <div class="form-group">
           <div class="form-check">
             <input class="form-check-input" type="checkbox" id="gridCheck">
             <label class="form-check-label" for="gridCheck">
-              Check me out
+              Receber noticias nossas
             </label>
           </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="submit" class="btn btn-primary bg-white text-dark">Enviar</button>
       </form>
 
 
