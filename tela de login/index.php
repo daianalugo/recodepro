@@ -16,10 +16,10 @@
         <section class="painel-login">
             <div class="card">
                 <h1>Entre cou cadastre-se</h1>
-                <form action="#" method="#">
-                    <input type="email" placeholder="e-mail">
-                    <input type="password" placeholder="senha">
-                    <button>Entrar</button>
+                <form action="login_usuario.php" method="post">
+                    <input type="email" name= "email" placeholder="e-mail">
+                    <input type="password" name= "senha" placeholder="senha">
+                    <button type="submit"> Entrar </button>
                 </form>
                 <a href="./cadastro.php">Ainda não possui cadstro, clique aqui </a>
              </div>
