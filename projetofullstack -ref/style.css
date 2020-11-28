@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    /* <!-- ***** MENU ***** --> */
+
+nav{
+    background: #0082e6;
+    height: 170px;
+    width: 100%;
+}
+
+.subnav{
+    background: #0082e6;  
+}
+
+label.logo{
+    color:white;
+    font-size: 40px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20%; 
+    
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;     
+}
+
+/* <!-- ***** LISTA DE PRODUTOS ***** --> */
+.sectioncateg ul li{
+    width: 10%;
+    color:blue;
+}
+
+
+.sectionprodutos{
+    display: flex;
+    justify-content: space-around;   
+}
+
+.imgproduto {
+    width: 120px;
+}
+
+.nomeproduto nomeproduto{
+    font-size: 15px;
+}
+
+.valorproduto{
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.valoratual{
+    font-size: 20px;
+    color: red;
+}
+
+
+/* <!-- ***** FORMA DE PAGAMENTO ***** --> */
+/* .pgto img{
+    width: 240px;
+    height: 50%;
+} */
+
+
+
+    /* <!-- ***** FORMULARIO ***** --> */
+.newsletter{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 50px 8%;    
+} 
+
+.newsletter h3 {
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.newsletter form {
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+    }
+
+.newsletter form input {
+    width: 40%;
+    margin-right: 1%;
+    padding: 15px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background-color: initial;
+    float: left;
+}   
+
+.newsletter button{
+    width: 18%;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+
+
+
+
+    /* <!-- ***** FOOTER ***** --> */
+
+.rodape{
+    width: 100%;
+    float: left;
+    background-color: grey;
+    padding: 20px 8%;
+}        
+
+.rodape p {
+    color: #fff;
+}
+
+
