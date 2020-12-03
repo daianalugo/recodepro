@@ -11,34 +11,20 @@
     <title>Full Stack</title>
 </head>
 <body>
-                  <!-- ***** MENU ***** -->
+                <!-- ***** MENU ***** -->
+    <?php require "./partials/nav.html" ?>
 
-    <nav>
-        <label class="logo">Full Stack Eletro</label>
-        <nav class="list-group list-group-item-danger ">           
-            <a class="list-group-item text-white subnav " target="blank" href= "index.php">Home</a>
-            <a class="list-group-item text-white subnav" target="blank" href= "produtos.php">Produtos</a>
-            <a class="list-group-item text-white subnav" target="blank" href= "loja.php">Loja</a>     
-        </nav>
-    </nav>
 
-    <!-- ***** FORMA DE PAGAMENTO ***** -->
-
+                <!-- ***** FORMA DE PAGAMENTO ***** -->
     <div class="pgto">
         <img onmouseover="aumentar(this)" onmouseout="normal(this)"  src="./img/formasdepgto.jpeg" alt=""  width="200px" height="50%">
     </div>
 
 
-            <!-- ***** FORMULARIO ***** -->
-   <section class="newsletter">
-       <h3>Nesletter</h3>
-       <p>Dev´s receba nossas promoçoes por-mail</p>
-       <form method="POST" name="mensagens" action= "">
-           <input type="text" name = "nome" placeholder="Seu Nome ">
-           <input type="email" name ="email" placeholder="Seu Email">
-           <button type="submit" name="submit" value="enviar">Cadastrar</button>
-       </form>
-   </section>
+                <!-- ***** FORMULARIO ***** -->
+    <?php require "./partials/formulario.html" ?>
+
+   
 
    <?php
         $servername = "localhost";
@@ -73,16 +59,13 @@
 
         ?>
 
-
+    <!-- ***** FOOTER ***** -->
     <footer class="rodape" >
         <p>  
             © Copyright 2020 Full Stack Eletro | Recode       
-        </p>
-        
-    </footer>
-    
-              <!-- ***** FOOTER ***** -->
-    
+        </p>        
+    </footer>             
+ 
 
 </body>
 </html>

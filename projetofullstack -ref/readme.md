@@ -21,7 +21,9 @@
 
 
 
+###### - [X] Pagina Vendedores feitas com card do bootstrap, que ao clicar no icone do whatsapp é direcionado diretamente ao vendedor escolhido.
 
+###### - [X] Nav e formulario componetizado
 
 
 

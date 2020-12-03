@@ -153,3 +153,15 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+-- Criação da Tabela de Vendedores
+CREATE TABLE vendasfullstack.vendedores(
+    id int not null PRIMARY KEY AUTO_INCREMENT,
+    name varchar(80) not null,
+    telphone varchar (30)
+);
+
+
+--   Cadastrando vendedores :
+-- INSERT INTO students (name, telphone) VALUES("Daiana", "5511964346536");

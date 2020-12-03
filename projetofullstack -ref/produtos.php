@@ -21,34 +21,17 @@
         
         // if (! $conn){
         //     die("deu ruim". mysqli_connect_error());
-        // }
-
-       
-
-
-
-
-
+        // }    
         ?>
 
-
-
-                  <!-- ***** MENU ***** -->
-
-    <nav>
-        <label class="logo" >Full Stack Eletro</label>
-        <ul class="nav-links">           
-            <li><a target="blank" href= "index.php">Home</a></li>
-            <li><a target="blank" href= "produtos.php">Produtos</a></li>
-            <li><a target="blank" href= "loja.php">Loja</a></li>     
-        </ul>
-    </nav>
+                 <!-- ***** MENU ***** -->
+    <?php require "./partials/nav.html" ?>
 
    
 
                <!-- ***** LISTA DE PRODUTOS ***** -->
 
-    <section class="sectioncateg">
+    <section class="sectioncateg ">
         <h3>Categorias</h3>
         <ul>
             <li onclick="exibirtodos('todos')">Todos</li>
