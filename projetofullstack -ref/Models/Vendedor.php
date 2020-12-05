@@ -17,7 +17,32 @@ class Vendedor
 
         $stmt = $connection->query("SELECT * FROM vendedores");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
-
     }
 
+
+    public static function getTotalVendedores()
+    {
+        $connection = Conexao::getDb();
+        $stmt = $connection->query("SELECT * count(*) as total_vendedores from vendedores");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    // public static function registerVendedor()
+    //     {
+    //         // insert
+    //     }
+
+    //     public static function updateVendedor()
+    //     {
+    //         // update
+    //     }
+
+    //     public static function deleteVendedor()
+    //     {
+    //         // delete
+    //     }
+
+
 }
+
+   

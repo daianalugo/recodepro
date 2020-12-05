@@ -21,10 +21,11 @@
 
 
 
-###### - [X] Pagina Vendedores feitas com card do bootstrap, que ao clicar no icone do whatsapp é direcionado diretamente ao vendedor escolhido.
+###### - [X] Pagina Vendedores feitas com card do bootstrap, que ao clicar no icone do whatsapp é direcionado diretamente ao vendedor escolhido.Dados dos vemndedores retornan da tabela craiada no bd.
 
 ###### - [X] Nav e formulario componetizado
 
+###### - [X] Pagina de lojas > Onde estão nossas lojas, API 
 
 
 

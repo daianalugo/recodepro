@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">    
     <script src="script.js"></script>
     <title>Full Stack</title>
 </head>
+
 <body>
                 <!-- ***** MENU ***** -->
     <?php require "./partials/nav.html" ?>
@@ -19,6 +19,8 @@
     <div class="pgto">
         <img onmouseover="aumentar(this)" onmouseout="normal(this)"  src="./img/formasdepgto.jpeg" alt=""  width="200px" height="50%">
     </div>
+         
+
 
 
                 <!-- ***** FORMULARIO ***** -->
@@ -59,12 +61,8 @@
 
         ?>
 
-    <!-- ***** FOOTER ***** -->
-    <footer class="rodape" >
-        <p>  
-            © Copyright 2020 Full Stack Eletro | Recode       
-        </p>        
-    </footer>             
+        <!-- ***** FOOTER ***** -->
+    <?php require "./partials/footer.html" ?>           
  
 
 </body>

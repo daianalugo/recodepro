@@ -18,11 +18,38 @@
     
 
                 <!-- ***** FORMA DE PAGAMENTO ***** -->
-    <div class="pgto">
+    <!-- <div class="pgto">
         <img onmouseover="aumentar(this)" onmouseout="normal(this)"  src="./img/formasdepgto.jpeg" alt=""  width="200px" height="50%">
+    </div> -->
+
+
+
+      
+    <button onclick="getApi()" type="button" class="btn btn-primary btn-lg btn-block" style="height: 150px;">
+        Onde estão nossas lojas
+    </button>
+
+    <div class="container" style="width: 30%">
+        <ul class="list-group list-group-flush" id="lista"></ul>
     </div>
 
+    <script>
+        
+        async function getApi()
+        {
+            const url = "https://servicodados.ibge.gov.br/api/v1/localidades/estados";
+            const response = await fetch(url)
+            const dados = await response.json()
 
+            let ul = document.getElementById('lista')
+            dados.map(element => ul.innerHTML += `<li class="list-group-item list-group-item-info ">${element.nome}</li>`)
+           
+
+        }   
+              
+
+    </script>   
+    
 
                 <!-- ***** FORMULARIO ***** -->
     <?php require "./partials/formulario.html" ?>
@@ -30,11 +57,7 @@
 
 
                 <!-- ***** FOOTER ***** -->
-    <footer class="rodape" >
-        <p>  
-            © Copyright 2020 Full Stack Eletro | Recode       
-        </p>        
-    </footer>
+    <?php require "./partials/footer.html" ?>   
    
               
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

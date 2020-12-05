@@ -102,13 +102,7 @@
 
 
       <!-- ***** FOOTER ***** -->
-
-    <footer class="rodape" >
-        <p>  
-            © Copyright 2020 Full Stack Eletro | Recode       
-        </p>
-        
-    </footer>
+    <?php require "./partials/footer.html" ?>   
     
               
     
