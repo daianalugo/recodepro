@@ -1,0 +1,1 @@
+Fiz um readme bonitão, agora quero ver quem vai alterar. Day 27/01/2021 20:32hr
