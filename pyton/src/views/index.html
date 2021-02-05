@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Index</title>
+</head>
+<body>
+    <div class="bg-primary p-5" style="height:100vh">
+        <div class=" container border p-4 bg-white">
+            <h1 class="display-4">Calcular</h1>
+            <hr/>
+
+            <form action="" method="POST">
+                <input type="number" placeholder="number..." name="num1" class="form-control my-3">
+                <input type="number" placeholder="number..." name="num2" class="form-control my-3">
+
+                <input type="radio" name="opc" id="soma" value="soma" checked>
+                <label for="soma">Soma</label>
+
+                <input type="radio" name="opc" id="subt" value="subt">
+                <label for="soma">Sub</label>
+
+                <input type="radio" name="opc" id="div" value="div">
+                <label for="soma">Div</label>
+
+                <input type="radio" name="opc" id="mult" value="mult">
+                <label for="soma">Mult</label>
+                <br/>
+
+                <div class="mt-4">
+                    <button class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-secondary" type="reset">Apagar</button>
+                </div>  
+            </form>
+
+        </div>
+
+    </div>
+</body>
+</html>
