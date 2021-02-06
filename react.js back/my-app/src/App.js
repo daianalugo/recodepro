@@ -1,5 +1,5 @@
 import React from 'react ';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 // import { useSelector, useDispatch } from 'react-redux';
 
 // function App() {
@@ -33,18 +33,34 @@ function App(){
   const [inputFrutas, setInputFrutas] = React.useState("");
 
   //redux
-  const frutas = useSelector((state)=> state.frutas)
-console.log(state);
+  const frutas = useSelector((state)=> state.frutas);
+  const dispatch = useDispatch(); 
+// console.log(state);
+
+
+function adicionarFruta(event){
+  event.preventDefault();
+
+  const objFruta={
+    nome:inputFutas
+  }
+
+  dispatch({type:"ADICIONAR", value: objFruta});
+
+}
 
   return(
     <div>
-      <form>
+      <form onSubmit={adicionarFruta}>
 
         <input placeholder= "uma fruta ..."
           value={inputFrutas}
           onChange={(event) => setInputFrutas(event.target.value) } />
-
       </form>
+
+      <button>
+        Enviar
+      </button>
 
       {frutas.map((fruta)=>{
         return (
