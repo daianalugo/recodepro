@@ -30,11 +30,22 @@ import { useSelector } from 'react-redux';
 
 
 function App(){
+  const [inputFrutas, setInputFrutas] = React.useState("");
+
+  //redux
   const frutas = useSelector((state)=> state.frutas)
 console.log(state);
 
   return(
     <div>
+      <form>
+
+        <input placeholder= "uma fruta ..."
+          value={inputFrutas}
+          onChange={(event) => setInputFrutas(event.target.value) } />
+
+      </form>
+
       {frutas.map((fruta)=>{
         return (
           <li>{fruta.nome}</li>
