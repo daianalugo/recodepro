@@ -1,8 +1,15 @@
 import {createStore} from 'redux';
 
-function reducer(state =0, action){
+const initialState = {
+    frutas : [
+        { nome : "Banana"},
+        { nome : "Maça"},
+    ]
+}
+
+function reducer(state = initialState, action){
     if(action.type === "ADICIONAR"){
-        return state +1;
+        return { frutas :[...state.frutas, {...action.value}]}
     }else {
         return state;
     }

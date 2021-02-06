@@ -30,12 +30,16 @@ import { useSelector } from 'react-redux';
 
 
 function App(){
-  const state = useSelector((state)=> state)
-// console.log(state);
+  const frutas = useSelector((state)=> state.frutas)
+console.log(state);
 
   return(
     <div>
-      app
+      {frutas.map((fruta)=>{
+        return (
+          <li>{fruta.nome}</li>
+        )
+      })}
     </div>
   );
 }
